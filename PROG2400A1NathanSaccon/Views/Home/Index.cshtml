@@ -1,15 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+
+<script src="~/js/text.js"></script>
+
 <h3>Alien Text Modifier</h3>
 
+Enter Text Here: <input id="input" type="text" name="inputText" /><br />
+<br /><br />
 
+<input type="checkbox" name="green" value="green" id="green"> Green Background
 
-<form action="ph">
+<br /><br />
 
-   Enter Text Here: <input type="text" name="inputText" /><br />
-   <br><br>
+<input type="submit" value="Display Text" onclick="boxChecker()">
 
-   <input type="submit" value="Submit">
+<br /><br />
 
-</form>
+<p id="text"></p>
+
+<br /><br />
