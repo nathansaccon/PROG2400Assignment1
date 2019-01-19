@@ -26,6 +26,12 @@ function boxChecker() {
     } else {
         document.getElementById("text").style.fontWeight = "normal";
     }
+    // Check if text should be italics
+    if (document.getElementById("italic").checked == true) {
+        document.getElementById("text").style.fontStyle = "italic";
+    } else {
+        document.getElementById("text").style.fontStyle = "normal";
+    }
 
 }
 
