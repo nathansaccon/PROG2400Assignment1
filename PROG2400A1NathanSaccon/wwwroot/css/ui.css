@@ -1,0 +1,27 @@
+﻿body {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#text {
+    font-size: 3em;
+}
+
+h3{
+    margin-bottom: 1.2em;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
