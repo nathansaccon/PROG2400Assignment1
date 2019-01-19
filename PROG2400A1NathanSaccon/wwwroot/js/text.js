@@ -20,6 +20,12 @@ function boxChecker() {
     if (document.getElementById("reverse").checked == true) {
         document.getElementById("text").innerText = reverseString(enteredText);
     }
+    // Check if text should be bold
+    if (document.getElementById("bold").checked == true) {
+        document.getElementById("text").style.fontWeight = "bold";
+    } else {
+        document.getElementById("text").style.fontWeight = "normal";
+    }
 
 }
 
