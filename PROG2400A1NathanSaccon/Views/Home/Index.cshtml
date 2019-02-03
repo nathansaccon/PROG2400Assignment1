@@ -1,25 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
 <script src="~/js/text.js"></script>
 
 <h3>Alien Text Modifier</h3>
+<form id="inputForm">
+    <label>Enter Text Here:</label>
+    <textarea id="input" rows="3" cols="60"></textarea><br />
+</form>
 
-Enter Text Here: <input id="input" type="text" name="inputText" /><br />
 <br />
+<form>
+    <div class="green boxInput"><input type="radio" name="modificationOption" id="green"> Green</div><br />
+    <div class="boxInput"><input type="radio" name="modificationOption" id="reverse"> Reverse</div><br />
+    <div class="bold boxInput"><input type="radio" name="modificationOption" id="bold"> Bold</div><br />
+    <div class="italic boxInput"><input type="radio" name="modificationOption" id="italic"> Italic</div>
+</form>
 
-<div class="green"><input type="checkbox" name="green" id="green"> Green</div>
-<input type="checkbox" name="reverse" id="reverse"> Reverse <br />
-<div class="bold"><input type="checkbox" name="bold" id="bold"> Bold</div>
-<div class="italic"><input type="checkbox" name="italic" id="italic"> Italic</div>
+<br /><br />
 
-    <br /><br />
+<input type="submit" value="Display Text" onclick="boxChecker()">
 
-    <input type="submit" value="Display Text" onclick="boxChecker()">
+<br /><br /><br />
 
-    <br /><br /><br />
+<p id="text"></p>
 
-    <p id="text"></p>
-
-    <br />
+<br />

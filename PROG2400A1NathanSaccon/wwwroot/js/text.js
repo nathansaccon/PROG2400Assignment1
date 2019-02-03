@@ -13,8 +13,10 @@ function boxChecker() {
     // Check if background should be green. 
     if (document.getElementById("green").checked == true) {
         document.getElementById("text").style.backgroundColor = "green";
+        document.getElementById("text").style.color = "white";
     } else {
         document.getElementById("text").style.backgroundColor = "transparent";
+        document.getElementById("text").style.color = "black";
     }
     // Check if text should be reversed
     if (document.getElementById("reverse").checked == true) {
