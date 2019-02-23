@@ -1,28 +1,48 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<script src="~/js/text.js"></script>
+@model InputData;
+
 
 <h3>Alien Text Modifier</h3>
-<form id="inputForm">
-    <label>Enter Text Here:</label>
-    <textarea id="input" rows="3" cols="60" tabindex="1"></textarea><br />
-</form>
 
 <br />
-<form>
-    <div class="green boxInput"><input type="radio" name="modificationOption" id="green" tabindex="2" > Green</div><br />
-    <div class="boxInput"><input type="radio" name="modificationOption" id="reverse" tabindex="3" > Reverse</div><br />
-    <div class="bold boxInput"><input type="radio" name="modificationOption" id="bold" tabindex="4" > Bold</div><br />
-    <div class="italic boxInput"><input type="radio" name="modificationOption" id="italic" tabindex="5"> Italic</div>
-</form>
 
-<br /><br />
+@using (Html.BeginForm())
+{
+    @Html.Label("Enter Text Here:")
+    @Html.TextArea("inputArea", null, 3, 40, null)<br />
 
-<input type="submit" value="Display Text" onclick="boxChecker()" tabindex="6">
+    <div class="green boxInput">
+        @Html.Label("Green")
+        @Html.RadioButton("modificationOption", "green")
+    </div><br />
+    <div class="boxInput">
+        @Html.Label("Reverse")
+        @Html.RadioButton("modificationOption", "reverse")
+    </div><br />
+    <div class="bold boxInput">
+        @Html.Label("Bold")
+        @Html.RadioButton("modificationOption", "bold")
+    </div><br />
+    <div class="italic boxInput">
+        @Html.Label("Italic")
+        @Html.RadioButton("modificationOption", "italic")
+    </div><br />
+
+    <input type="submit" value="Display Text" tabindex="6" name="modificationOption">
+}
 
 <br /><br /><br />
 
-<p id="text"></p>
+@{
+    try
+    {
+        @Html.Raw(Model.Input)
+    }
+    catch (Exception)
+    {
+    }
+}
 
 <br />

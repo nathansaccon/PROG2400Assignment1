@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\natha\\Documents\\PROG2400 - Software Quality and Usability\\Assignment 1\\PROG2400Assignment1\\PROG2400A1NathanSaccon\\PROG2400A1NathanSaccon.csproj",
+      "projectUniqueName": "C:\\Users\\natha\\Documents\\PROG2400 - Software Quality and Usability\\Assignment 2\\PROG2400Assignment1\\PROG2400A1NathanSaccon\\PROG2400A1NathanSaccon.csproj",
       "projectName": "PROG2400A1NathanSaccon",
-      "projectPath": "C:\\Users\\natha\\Documents\\PROG2400 - Software Quality and Usability\\Assignment 1\\PROG2400Assignment1\\PROG2400A1NathanSaccon\\PROG2400A1NathanSaccon.csproj",
+      "projectPath": "C:\\Users\\natha\\Documents\\PROG2400 - Software Quality and Usability\\Assignment 2\\PROG2400Assignment1\\PROG2400A1NathanSaccon\\PROG2400A1NathanSaccon.csproj",
       "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\natha\\Documents\\PROG2400 - Software Quality and Usability\\Assignment 1\\PROG2400Assignment1\\PROG2400A1NathanSaccon\\obj\\",
+      "outputPath": "C:\\Users\\natha\\Documents\\PROG2400 - Software Quality and Usability\\Assignment 2\\PROG2400Assignment1\\PROG2400A1NathanSaccon\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
