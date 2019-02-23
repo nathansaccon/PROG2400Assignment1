@@ -23,7 +23,7 @@ namespace PROG2400A1NathanSaccon.Controllers
                 model.Input = "<p id='text' style='color:green'>" + inputArea + "</p>";
             }else if (modificationOption == "reverse")
             {
-                model.Input = "<p id='text'>" + Reverse(inputArea) + "</p>";
+                model.Input = "<p id='text'>" + InputData.Reverse(inputArea) + "</p>";
             }
             else if (modificationOption == "bold")
             {
@@ -33,16 +33,12 @@ namespace PROG2400A1NathanSaccon.Controllers
             {
                 model.Input = "<i id='text'>" + inputArea + "</i>";
             }
+            else if (modificationOption == "D2B")
+            {
+                model.Input = "<p id='text'>" + InputData.D2B(inputArea) + "</p>";
+            }
 
             return View(model);
         }
-
-        public static string Reverse(string s)
-        {
-            char[] charArray = s.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
-        }
-
     }
 }
