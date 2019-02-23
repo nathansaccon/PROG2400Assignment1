@@ -37,6 +37,10 @@ namespace PROG2400A1NathanSaccon.Controllers
             {
                 model.Input = "<p id='text'>" + InputData.D2B(inputArea) + "</p>";
             }
+            else if (modificationOption == "B2D")
+            {
+                model.Input = "<p id='text'>" + InputData.B2D(inputArea) + "</p>";
+            }
 
             return View(model);
         }
